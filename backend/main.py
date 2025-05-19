@@ -20,7 +20,7 @@ app = Flask(__name__)
 # Environment-based CORS configuration
 if os.getenv("FLASK_ENV") == "production":
     logger.info("Starting server in production mode")
-    CORS(app, origins=["https://your-production-domain.com"])
+    CORS(app, origins=["https://inscribe-bonus.onrender.com"])  # Update this to your frontend domain
 else:
     logger.info("Starting server in development mode")
     CORS(app, origins=["http://localhost:5173"])  # Default Vite dev server port
