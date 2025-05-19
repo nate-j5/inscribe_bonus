@@ -2,7 +2,7 @@
 
 This app allows internal team members to write feature requests in their own words. It then uses the Claude API to generate a summary, which can be added to tools like Featurebase, Sleekplan, or Canny.
 
-[View Website](https://github.com/nate-j5/inscribe_bonus).
+[View Website](https://inscribe-bonus.onrender.com).
 
 ## Technical Setup
 ### Frontend
