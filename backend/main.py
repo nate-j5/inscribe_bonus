@@ -79,4 +79,5 @@ Keep the summary professional, actionable, and limited to exactly one sentence m
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5500, debug=False)
+    port = int(os.environ.get('PORT', 5500))
+    app.run(host='0.0.0.0', port=port)
