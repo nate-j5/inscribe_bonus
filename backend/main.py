@@ -20,10 +20,10 @@ app = Flask(__name__)
 # Environment-based CORS configuration
 if os.getenv("FLASK_ENV") == "production":
     logger.info("Starting server in production mode")
-    CORS(app)  # Allow all origins in production
+    CORS(app, origins=["https://inscribe-bonus.onrender.com", "*"])  
 else:
     logger.info("Starting server in development mode")
-    CORS(app, origins=["http://localhost:5173"])  # Default Vite dev server port
+    CORS(app, origins=["http://localhost:5173"]) 
 
 # Initialize Anthropic client
 anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
