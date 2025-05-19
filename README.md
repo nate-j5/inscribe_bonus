@@ -40,7 +40,7 @@ This app allows internal team members to write feature requests in their own wor
    ```
    # Terminal 1 - Backend
    cd backend
-   python main.py
+   python3 main.py
 
    # Terminal 2 - Frontend
    cd frontend
